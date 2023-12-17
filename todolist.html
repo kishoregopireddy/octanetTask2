@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="todo-container">
+    <div id="todo-header">TO - DO - LIST</div>
+    <div>
+        <label for="task-input">Task:</label>
+        <input type="text" id="task-input" placeholder="Enter a task">
+    </div>
+    <div>
+        <label for="category-select">Category:</label>
+        <select id="category-select">
+            <option value="development">Development</option>
+            <option value="design">Design</option>
+            <option value="content">Content</option>
+            <!-- Add more categories as needed -->
+        </select>
+    </div>
+    <div>
+        <label for="deadline-input">Deadline:</label>
+        <input type="date" id="deadline-input">
+    </div>
+    <div>
+        <label for="priority-select">Priority:</label>
+        <select id="priority-select">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+    </div>
+    <div>
+        <label for="label-input">Label:</label>
+        <input type="text" id="label-input" placeholder="Enter labels (comma-separated)">
+    </div>
+    <button id="add-btn" onclick="addItem()">Add Task</button>
+
+    <ul id="todo-list"></ul>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
